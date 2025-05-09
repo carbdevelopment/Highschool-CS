@@ -1,1 +1,1 @@
-# Highschool-CS
+# Simple Websites

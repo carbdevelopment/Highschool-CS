@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(120deg, #0046ae, #ffd200, #cc092f);
+    padding: 20px;
+}
+
+.quiz-container {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    max-width: 1200px;
+    width: 90%;
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+h2 {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.btn-grid {
+    display: grid;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+button {
+    background-color: #0046ae;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #003388;
+    transform: translateY(-2px);
+}
+
+.btn-grid button {
+    background-color: white;
+    border: 2px solid #0046ae;
+    color: #0046ae;
+    text-align: center;
+}
+
+.start-btn {
+    background-color: #0046ae;
+    color: white;
+    border: 2px solid #0046ae;
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+}
+.btn-grid button:hover {
+    background-color: #0046ae;
+    color: white;
+}
+
+.btn-grid button.correct {
+    background-color: #4CAF50;
+    color: white;
+    border-color: #4CAF50;
+}
+
+.btn-grid button.wrong {
+    background-color: #f44336;
+    color: white;
+    border-color: #f44336;
+}
+
+.hide {
+    display: none !important;
+}
+
+#score-container {
+    text-align: center;
+}
+
+#score {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0046ae;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#question img {
+    max-width: 100%;
+    max-height: 300px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 500px) {
+    .quiz-container {
+        padding: 15px;
+    }
+    
+    button {
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+}
